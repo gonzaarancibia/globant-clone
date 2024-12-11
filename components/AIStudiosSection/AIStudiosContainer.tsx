@@ -7,8 +7,8 @@ const AIStudiosContainer = async () => {
 
   try {
     AIStudios = await fetchAIStudios();
-  } catch (err) {
-    error = true;
+  } catch (err: unknown) {
+    error = err;
   }
 
   return <AIStudiosSection AIStudios={AIStudios} error={error} />;

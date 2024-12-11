@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 interface Props {
-  onShowNavigation: any;
+  onShowNavigation: () => void;
 }
 
 const MobileNavigation: NextPage<Props> = ({ onShowNavigation }) => {

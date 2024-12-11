@@ -2,7 +2,7 @@ import StudioItem, { AIStudio } from "./StudioItem";
 
 type Props = {
   AIStudios: AIStudio[] | null;
-  error?: boolean;
+  error?: unknown | boolean;
 };
 
 const AIStudiosView = ({ AIStudios, error }: Props) => {

@@ -4,9 +4,7 @@ import Link from "next/link";
 import LanguageSelector from "./LanguageSelector";
 import { useState } from "react";
 
-interface Props {}
-
-const DesktopNavigation: NextPage<Props> = ({}) => {
+const DesktopNavigation: NextPage = () => {
   // State to manage expanded menu
   const [expandedMenu, setExpandedMenu] = useState<string | null>(null);
 
@@ -22,12 +20,11 @@ const DesktopNavigation: NextPage<Props> = ({}) => {
     setExpandedMenu(menuLabel);
   };
 
-  const handleKeyDown = (event: React.KeyboardEvent, menuLabel: string) => {
+  const handleKeyDown = (event: React.KeyboardEvent) => {
     if (event.key === "Escape") {
       setExpandedMenu(null); // Cierra el menú al presionar Escape
     }
   };
-  console.log("expandedMenu", expandedMenu);
 
   return (
     <div className="hidden  lg:flex w-fit min-w-[800px] items-center justify-between space-x-4">
@@ -48,9 +45,7 @@ const DesktopNavigation: NextPage<Props> = ({}) => {
                 onFocus={() => {
                   return item.label && handleFocus(item.label);
                 }}
-                onKeyDown={(event) =>
-                  item.label && handleKeyDown(event, item.label)
-                }
+                onKeyDown={(event) => item.label && handleKeyDown(event)}
                 aria-label={`Open submenu for ${item.label}`}
               >
                 <span className="hover:underline hover:decoration-2 hover:decoration-black hover:underline-offset-[12px]">
