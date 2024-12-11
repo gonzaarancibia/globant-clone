@@ -10,9 +10,9 @@ interface Props {
 const MobileNavigation: NextPage<Props> = ({ onShowNavigation }) => {
   const [showNavigation, setShowNavigation] = useState(false);
   // State for each submenu (toggle the open/close state for each)
-  const [openSubmenu, setOpenSubmenu] = useState(null);
+  const [openSubmenu, setOpenSubmenu] = useState<number | null>(null);
 
-  const toggleSubmenu = (index) => {
+  const toggleSubmenu = (index: number) => {
     setOpenSubmenu(openSubmenu === index ? null : index); // Toggle submenu
   };
 

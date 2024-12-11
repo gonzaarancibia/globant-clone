@@ -3,7 +3,7 @@ import AIStudiosSection from "./components/AIStudiosView";
 
 const AIStudiosContainer = async () => {
   let AIStudios = null;
-  let error = false;
+  let error: boolean | unknown = false;
 
   try {
     AIStudios = await fetchAIStudios();
