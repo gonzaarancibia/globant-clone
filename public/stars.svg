@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.929" height="58.302" viewBox="0 0 42.929 58.302">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d6ff4e"/>
+      <stop offset="1" stop-color="#3febaf"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_116352" data-name="Group 116352" transform="translate(-11125.357 -4510.645)">
+    <g id="compass_318099" transform="translate(11130.354 4510.645) rotate(8)">
+      <g id="Group_116351" data-name="Group 116351">
+        <path id="Path_57770" data-name="Path 57770" d="M34.937,16.551,23.6,12.3,19.355.971a1.5,1.5,0,0,0-2.8,0L12.3,12.3.969,16.551a1.5,1.5,0,0,0,0,2.8L12.3,23.6l4.247,11.331a1.5,1.5,0,0,0,2.8,0L23.6,23.6l11.334-4.249a1.5,1.5,0,0,0,0-2.8Z" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="compass_318099-2" data-name="compass_318099" transform="translate(11147.708 4540.91)">
+      <g id="Group_116351-2" data-name="Group 116351">
+        <path id="Path_57770-2" data-name="Path 57770" d="M20.023,9.486l-6.5-2.435L11.092.556a.858.858,0,0,0-1.607,0L7.051,7.051.556,9.486a.859.859,0,0,0,0,1.607l6.5,2.435,2.434,6.494a.858.858,0,0,0,1.607,0l2.434-6.494,6.5-2.435a.859.859,0,0,0,0-1.607Z" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="compass_318099-3" data-name="compass_318099" transform="translate(11138.176 4554.029)">
+      <g id="Group_116351-3" data-name="Group 116351">
+        <path id="Path_57770-3" data-name="Path 57770" d="M14.515,6.876,9.806,5.111,8.041.4A.622.622,0,0,0,6.876.4L5.112,5.111.4,6.876a.622.622,0,0,0,0,1.165L5.112,9.806l1.765,4.708a.622.622,0,0,0,1.165,0L9.806,9.806l4.709-1.765a.622.622,0,0,0,0-1.165Z" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>
