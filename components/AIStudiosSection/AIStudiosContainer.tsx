@@ -8,6 +8,7 @@ const AIStudiosContainer = async () => {
   try {
     AIStudios = await fetchAIStudios();
   } catch (err: unknown) {
+    console.error("Error fetching AI Studios:", err);
     error = err;
   }
 
