@@ -46,11 +46,7 @@ const LanguageSelector: NextPage<Props> = ({ buttonMenuStyles }) => {
         aria-label="Select Language"
         aria-haspopup="true"
         aria-expanded={expandedMenu}
-        onFocus={() => {
-          console.log("Estoy en onFocus");
-
-          return handleFocus(selectedLanguage);
-        }}
+        onFocus={() => handleFocus(selectedLanguage)}
       >
         {selectedLanguage}
         <span className="ml-2">&#x25BC;</span> {/* Flecha hacia abajo */}
@@ -58,7 +54,7 @@ const LanguageSelector: NextPage<Props> = ({ buttonMenuStyles }) => {
 
       {/* Submenú de idiomas */}
 
-      <menu
+      <div
         className={`absolute top-full left-0 w-fit
        bg-white shadow-lg transition-all duration-300
        ease-in-out overflow-hidden transform origin-top z-50
@@ -67,9 +63,8 @@ const LanguageSelector: NextPage<Props> = ({ buttonMenuStyles }) => {
         ${expandedMenu ? "max-h-96" : "focus-within:max-h-0 max-h-0"}
         `}
         // This can see like useless but this garantice good compatibility with old  browser
-        role="menu"
       >
-        <ul className="grid grid-cols-1 w-fit">
+        <ul className="grid grid-cols-1 w-fit" role="menu">
           {languages.map((language) => (
             <li
               key={`item-${language}`}
@@ -102,7 +97,7 @@ const LanguageSelector: NextPage<Props> = ({ buttonMenuStyles }) => {
             </li>
           ))}
         </ul>
-      </menu>
+      </div>
     </div>
   );
 };

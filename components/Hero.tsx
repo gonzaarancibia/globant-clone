@@ -19,7 +19,7 @@ const HeroSection: NextPage = ({}) => {
       {/* Content */}
       <div
         className="relative h-full flex flex-col justify-center items-center lg:items-start lg:pl-16 xl:pl-[8%] 
-        mx-auto lg:text-left px-4 sm:px-4 max-md:px-10 lg:pb-10 max-md:items-start"
+        mx-auto lg:text-left px-4 sm:px-4 max-md:px-10 lg:pb-10 max-lg:items-start"
       >
         {/* Title */}
         <h1

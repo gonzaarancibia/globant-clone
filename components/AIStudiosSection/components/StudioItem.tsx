@@ -27,7 +27,7 @@ const StudioItem: NextPage<AIStudio> = ({ id, img, title, description }) => {
       <div className="mt-2 max-sm:w-[100%]">
         <h3
           id={`${id}-title`}
-          className="text-[#028484] font-medium uppercase tracking-wide"
+          className="text-[#025858] font-medium uppercase tracking-wide"
           style={{
             fontFamily: "Heebo, sans-serif",
             marginTop: "0.5rem",
