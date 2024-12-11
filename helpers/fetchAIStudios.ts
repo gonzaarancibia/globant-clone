@@ -6,5 +6,9 @@ export const fetchAIStudios = async () => {
   if (!res.ok) {
     throw new Error("Failed to fetch AI Studios");
   }
-  return (await res.json())?.data;
+
+  return {
+    baseUrl,
+    aiStudios: (await res.json())?.data,
+  };
 };

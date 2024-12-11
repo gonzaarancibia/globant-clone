@@ -3,9 +3,10 @@ import StudioItem, { AIStudio } from "./StudioItem";
 type Props = {
   AIStudios: AIStudio[] | null;
   error?: unknown | boolean;
+  baseUrl: string;
 };
 
-const AIStudiosView = ({ AIStudios, error }: Props) => {
+const AIStudiosView = ({ AIStudios, error, baseUrl }: Props) => {
   if (error) {
     console.log("error->", error);
 
@@ -17,6 +18,7 @@ const AIStudiosView = ({ AIStudios, error }: Props) => {
           </h2>
           <p className="text-gray-600">
             There was an error loading the studios. Please try again later.
+            BaseUrl Error: {baseUrl} - {error + ""}
           </p>
         </div>
       </section>
