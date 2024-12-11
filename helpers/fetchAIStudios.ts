@@ -1,5 +1,8 @@
+import { getBaseUrl } from "./getBaseUrl";
+
 export const fetchAIStudios = async () => {
-  const res = await fetch("/api/ai-studios");
+  const baseUrl = getBaseUrl();
+  const res = await fetch(`${baseUrl}/api/ai-studios`);
   if (!res.ok) {
     throw new Error("Failed to fetch AI Studios");
   }
