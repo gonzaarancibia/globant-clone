@@ -34,9 +34,7 @@ describe("fetchAIStudios", () => {
     //Assert
     expect(result).toEqual(mockData);
     expect(global.fetch).toHaveBeenCalledTimes(1);
-    expect(global.fetch).toHaveBeenCalledWith(
-      `${process.env.NEXT_PUBLIC_API_URL}/ai-studios`
-    );
+    expect(global.fetch).toHaveBeenCalledWith("/api/ai-studios");
   });
 
   it("should throw an error if the response is not ok", async () => {
@@ -51,9 +49,7 @@ describe("fetchAIStudios", () => {
     );
 
     expect(global.fetch).toHaveBeenCalledTimes(1);
-    expect(global.fetch).toHaveBeenCalledWith(
-      `${process.env.NEXT_PUBLIC_API_URL}/ai-studios`
-    );
+    expect(global.fetch).toHaveBeenCalledWith("/api/ai-studios");
   });
 
   it("should throw an error if fetch fails", async () => {
@@ -61,8 +57,6 @@ describe("fetchAIStudios", () => {
 
     await expect(fetchAIStudios()).rejects.toThrow("Network Error");
     expect(global.fetch).toHaveBeenCalledTimes(1);
-    expect(global.fetch).toHaveBeenCalledWith(
-      `${process.env.NEXT_PUBLIC_API_URL}/ai-studios`
-    );
+    expect(global.fetch).toHaveBeenCalledWith("/api/ai-studios");
   });
 });
